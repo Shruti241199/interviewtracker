@@ -1,0 +1,118 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.send-email-button {
+  /* margin-left: auto;
+  float: right; */
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.App-header {
+  background-color: rgb(64, 19, 227);
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 0.8rem;
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cards-div {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.cards-div:nth-child(4n) {
+  margin-right: 0;
+}
+.card-div {
+  border: 2px solid;
+  border-radius: 2px;
+  width: 20rem;
+  height: 20rem;
+  padding: 0.5rem;
+  margin-bottom: 3.5rem;
+}
+.rounds-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.overall-status-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.flippable-button {
+  width: 100px;
+  height: 50px;
+  /* perspective: 1000px; */
+}
+
+.flippable-button .front,
+.flippable-button .back {
+  /* width: 100%;
+  height: 100%; */
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.flippable-button .front {
+  /* background-color: #4caf50; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flippable-button .back {
+  /* background-color: #f44336; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.flippable-button.flipped .front {
+  transform: rotateY(0);
+}
+
+.flippable-button.flipped .back {
+  transform: rotateY(0);
+}
