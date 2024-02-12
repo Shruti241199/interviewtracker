@@ -19,7 +19,7 @@ function App() {
             {data &&
               data.map((candidate, index) => {
                 return (
-                  <GridColumn key={index} width={4}>
+                  <GridColumn key={index}>
                     <div className="card-div" fluid>
                       <CandidateCard candidate={candidate} />
                     </div>

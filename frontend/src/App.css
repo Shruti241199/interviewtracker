@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+  width: 0rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Hide the thumb */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -8,13 +17,22 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.separator {
+  width: 100%;
+  height: 1px; /* Adjust the height of the separator */
+  background-color: #00000057;
+  margin: 10px 0;
+}
+
 .send-email-button {
   /* margin-left: auto;
   float: right; */
-  padding: 10px 10px;
+  padding: 20px 10px 0 10px;
   display: flex;
   justify-content: flex-end;
 }
+
 .App-header {
   background-color: rgb(64, 19, 227);
   min-height: 12vh;
@@ -23,10 +41,11 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  align-content: center;
   font-size: 0.8rem;
   color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .App-link {
   color: #61dafb;
 }
@@ -35,39 +54,90 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .cards-div {
-  margin: 20px;
+  margin: 20px 20px 20px 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 56px;
 }
+
 .cards-div:nth-child(4n) {
   margin-right: 0;
 }
+
 .card-div {
-  border: 2px solid;
-  border-radius: 2px;
-  width: 20rem;
-  height: 20rem;
-  padding: 0.5rem;
+  border: 2px solid darkgray;
+  width: 90%;
+  height: 85%;
+  padding: 1.5rem;
   margin-bottom: 3.5rem;
+  border-radius: 40px;
 }
+
+.card-div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.463), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+
+.card-div:not(:hover) {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  /* Create a circular shape */
+}
+
+.circle:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.463), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1.001);
+}
+
+.circle:not(:hover) {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.6s ease-in-out;
+  transform: scale(1);
+}
+
+.circle-back {
+  display: grid;
+  text-align: center;
+  color: white;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 .rounds-div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 17px;
+  align-items: center;
 }
+
 .overall-status-div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -77,42 +147,47 @@ li {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .flippable-button {
-  width: 100px;
-  height: 50px;
-  /* perspective: 1000px; */
+  width: 3rem;
+  height: 3rem;
+  perspective: 1000px;
+}
+
+.flippable-button div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flippable-button .front,
 .flippable-button .back {
-  /* width: 100%;
-  height: 100%; */
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   backface-visibility: hidden;
-  transition: transform 0.6s;
+  transition: all 0.6s;
 }
 
 .flippable-button .front {
-  /* background-color: #4caf50; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 .flippable-button .back {
-  /* background-color: #f44336; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: rotateY(180deg);
 }
 
 .flippable-button.flipped .front {
-  transform: rotateY(0);
+  transform: rotateY(180deg);
 }
 
 .flippable-button.flipped .back {
-  transform: rotateY(0);
+  transform: rotateY(360deg);
 }
