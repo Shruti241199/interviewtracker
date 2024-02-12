@@ -12,6 +12,10 @@
   pointer-events: none;
 }
 
+.App {
+  background-color: #f2f3f3;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -74,15 +78,17 @@
 
 .card-div {
   border: 2px solid darkgray;
+  background-color: #fff;
   width: 90%;
   height: 85%;
   padding: 1.5rem;
   margin-bottom: 3.5rem;
-  border-radius: 40px;
+  border-radius: 7px;
 }
 
 .card-div:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.463), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
   text-align: center;
   transition: transform 0.3s ease-in-out;
   transform: scale(1.02);
