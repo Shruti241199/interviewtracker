@@ -7,10 +7,21 @@ import axiosUsers from './components/httpurl';
 
 function App() {
   const [candidateData, setCandidateData] = useState([]);
+
+  const handleSendEmail = async () => {
+      axiosUsers.post("")
+        .then((response) => {
+          alert(response.data);
+          console.log(response.data);
+        })
+        .catch(error => console.log(error));
+    }
+
   const fetchCandidateData = async () => {
     try {
       const response = await axiosUsers.get('');
       setCandidateData(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -28,7 +39,7 @@ function App() {
         <h1>Interview Tracker</h1>
       </header>
       <div className="send-email-button">
-        <Button primary>Send Email</Button>
+        <Button primary onClick={handleSendEmail}>Send Email</Button>
       </div>
       <div className="cards-div">
         <Grid columns={4} doubling stackable>
@@ -37,7 +48,7 @@ function App() {
               candidateData.map((candidate, index) => {
                 return (
                   <GridColumn key={index}>
-                    <div className="card-div" fluid>
+                    <div className="card-div">
                       <CandidateCard candidate={candidate} />
                     </div>
                   </GridColumn>

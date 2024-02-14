@@ -5,22 +5,22 @@
         "email_id": "abc@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 80,
                 "status": "Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -32,22 +32,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -59,22 +59,22 @@
         "email_id": "xyz@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 85,
                 "status": "Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 80,
                 "status": "Cleared"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "In Progress"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -86,22 +86,22 @@
         "email_id": "pqr@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 85,
                 "status": "Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 80,
                 "status": "Cleared"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 80,
                 "status": "Cleared"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 80,
                 "status": "Cleared"
             }
@@ -113,22 +113,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -140,22 +140,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -167,22 +167,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -194,22 +194,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -221,22 +221,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }
@@ -248,22 +248,22 @@
         "email_id": "mno@gmail.com",
         "rounds": [
             {
-                "name": "Aptitude_round",
+                "name": "Aptitude round",
                 "percentage": 65,
                 "status": "Not Cleared"
             },
             {
-                "name": "Technical_round",
+                "name": "Technical round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "Coding_round",
+                "name": "Coding round",
                 "percentage": 0,
                 "status": "NA"
             },
             {
-                "name": "HR_round",
+                "name": "HR round",
                 "percentage": 0,
                 "status": "NA"
             }

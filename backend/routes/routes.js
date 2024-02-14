@@ -3,6 +3,6 @@ const controller = require('../controllers/controller');
 const router = express.Router();
 
 router.get('/', controller.getCandidateData);
-// router.post('/', controller.sendCandidateData);
+router.post('/', controller.sendCandidateData);
 
 module.exports = router;

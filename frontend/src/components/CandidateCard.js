@@ -16,7 +16,7 @@ export const CandidateCard = ({ candidate }) => {
           {candidate.currentStatus}
         </span>
       </div>
-      <div class="separator"></div>
+      <div className="separator"></div>
       <ul>
         {candidate?.rounds.map((round, index) => {
           return (
