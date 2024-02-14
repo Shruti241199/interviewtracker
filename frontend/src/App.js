@@ -3,6 +3,7 @@ import './App.css';
 import { CandidateCard } from './components/CandidateCard';
 import { Button, Grid, GridColumn, GridRow } from 'semantic-ui-react';
 import axiosUsers from './components/httpurl';
+import { showToast } from "./utils/toast";
 // const data = require('./data/data.json');
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
   const handleSendEmail = async () => {
       axiosUsers.post("")
         .then((response) => {
-          alert(response.data);
+          // alert(response.data);
+          showToast("SUCCESS", "Email sent successfully!");
           console.log(response.data);
         })
         .catch(error => console.log(error));
