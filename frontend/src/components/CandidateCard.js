@@ -1,15 +1,22 @@
-import React from 'react';
-import Status from './Status';
+import React from "react";
+import Status from "./Status";
 
 export const CandidateCard = ({ candidate }) => {
   return (
-    <div>
+    <>
       <div className="overall-status-div">
-        <span style={{ color: 'blue', fontWeight: 'bold', fontSize: '1.5em' }}>
+        <span style={{ color: "blue", fontWeight: "bold", fontSize: "1.5em" }}>
           {candidate.name}
         </span>
-        <span>{candidate.currentStatus}</span>
+        <span
+          style={{
+            cursor: "default",
+          }}
+        >
+          {candidate.currentStatus}
+        </span>
       </div>
+      <div class="separator"></div>
       <ul>
         {candidate?.rounds.map((round, index) => {
           return (
@@ -22,6 +29,6 @@ export const CandidateCard = ({ candidate }) => {
           );
         })}
       </ul>
-    </div>
+    </>
   );
 };

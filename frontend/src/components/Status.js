@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Button } from 'semantic-ui-react';
 
 export default function Status({ round }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -13,43 +12,48 @@ export default function Status({ round }) {
         round.status === 'Cleared'
           ? 'cleared'
           : round.status === 'In Progress'
-          ? 'in_progress'
-          : 'not_cleared'
+            ? 'in_progress'
+            : 'not_cleared'
       }
     >
       <div className={`flippable-button ${isFlipped ? 'flipped' : ''}`}>
         {!isFlipped ? (
           <div className="front">
-            <Button
-              color={
-                round.status === 'Cleared'
-                  ? 'green'
-                  : round.status === 'In Progress'
-                  ? 'yellow'
-                  : 'red'
-              }
-              circular
-              icon="round"
-              size="mini"
+            <div
+              className='circle'
+              style={{
+                backgroundColor:
+                  round.status === 'Cleared'
+                    ? 'green'
+                    : round.status === 'In Progress'
+                      ? 'yellow'
+                      : 'red'
+              }}
               onClick={handleClick}
-            />
+            ></div>
           </div>
         ) : (
           <div className="back">
-            <Button
-              content="0"
-              color={
+            <div
+              className='circle circle-back'
+              style={{
+                backgroundColor:
+                  round.status === 'Cleared'
+                    ? 'green'
+                    : round.status === 'In Progress'
+                      ? 'yellow'
+                      : 'red',
+                color: 
                 round.status === 'Cleared'
-                  ? 'green'
+                  ? 'white'
                   : round.status === 'In Progress'
-                  ? 'yellow'
-                  : 'red'
-              }
-              circular
-              icon="round"
-              size="mini"
+                    ? 'black'
+                    : 'white'
+              }}
               onClick={handleClick}
-            />
+            >
+              {round.percentage}
+            </div>
           </div>
         )}
       </div>
