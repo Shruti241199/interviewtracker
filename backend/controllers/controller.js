@@ -14,15 +14,15 @@ const getCandidateData = (req, res) => {
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 't47790793@gmail.com',
-    pass: 'cevz aujd livc fgkb',
+    user: process.env.USER,
+    pass: process.env.PASS,
   },
 });
 
 // Function to send email with a dynamic table
 const sendCandidateData = async (req, res) => {
   // Replace with your desired recipient email address
-  const toEmail = 's.deepshikha181926@gmail.com';
+  const toEmail = 'giriakhash@gmail.com';
 
   // Dynamically generate the table rows based on candidates data
   const tableRows = data.map(candidate => `
@@ -55,7 +55,7 @@ const sendCandidateData = async (req, res) => {
 
   // Email options
   const mailOptions = {
-    from: 'Interview Tracker <t47790793@gmail.com>', // Replace with your email address
+    from: `Interview Tracker <${process.env.USER}>`, // Replace with your email address
     to: toEmail,
     subject: 'Interviewed Candidates Report',
     html: htmlContent,
